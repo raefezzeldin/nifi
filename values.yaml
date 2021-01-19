@@ -2,7 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-replicaCount: 3
+replicaCount: 2
 
 image:
   repository: xemuliam/nifi
@@ -26,7 +26,7 @@ listener:
 zookeeper:
   deploy:
     enabled: true
-  nodeList: zk-0.zk-hs,zk-1.zk-hs,zk-2.zk-hs
+  nodeList: zk-0.zk-hs #,zk-1.zk-hs,zk-2.zk-hs
   nodePort: 2888
 
 resources: {}
