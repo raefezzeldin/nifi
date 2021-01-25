@@ -46,3 +46,14 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+ca:
+  server: ""
+  port: 9090
+  # TODO: token should be randomly generated randomly via secret
+  token: sixteenCharacters
+  image:
+    repository: apache/nifi-toolkit
+    pullPolicy: IfNotPresent
+    tag: "latest"
+    imagePullSecret: ""

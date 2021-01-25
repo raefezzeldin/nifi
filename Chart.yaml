@@ -3,3 +3,12 @@ appVersion: "1.9"
 description: A Helm chart for Nifi
 name: nifi
 version: 1.0.0
+keywords:
+  - nifi
+  - data
+home: https://nifi.apache.org/
+icon: https://svn.apache.org/repos/asf/nifi/site/trunk/images/niFi-logo-horizontal-scaled.png
+dependencies:
+  - name: ca
+    version: 0.1.0
+    condition: nifi.tls.certificateSource.nifiToolkit
