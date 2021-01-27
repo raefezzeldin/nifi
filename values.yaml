@@ -5,8 +5,8 @@
 replicaCount: 2
 
 image:
-  repository: xemuliam/nifi
-  tag: 1.9
+  repository: apache/nifi
+  tag: 1.12.1
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []

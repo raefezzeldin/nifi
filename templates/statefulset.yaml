@@ -51,3 +51,13 @@ spec:
               value: "{{ .Values.bannerText }}"
             - name: NIFI_WEB_HTTP_PORT
               value: "{{ .Values.service.port }}"
+            - name: "NIFI_HOME"
+              value: "/opt/nifi/nifi-current"
+            - name: "NIFI_LOG_DIR"
+              value: "/opt/nifi/nifi-current/logs"
+            - name: "NIFI_TOOLKIT_HOME"
+              value: "/opt/nifi/nifi-toolkit-current"
+            - name: "NIFI_PID_DIR"
+              value: "/opt/nifi/nifi-current/run"
+            - name: "NIFI_BASE_DIR"
+              value: "/opt/nifi"
